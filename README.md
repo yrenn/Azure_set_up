@@ -1,5 +1,7 @@
 # Azure_set_up
 
+The project shows the step to step to set up Azure and connect Azure to SSMS(SQL Server Management Studio) and shows the basic activity like copying data from SSMS to Snowflake using Azure data factory.
+
 ## overview
 - create resource group
 - create sql database
@@ -7,7 +9,7 @@
 - connnect to ssms
 - create a data factory
 - add link service
-- copy data from ssms to snowflake
+- create pipeline and copy data from ssms to snowflake
 
 ## flow chart
 <img src= "images/flow_chart.png">
