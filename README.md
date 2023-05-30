@@ -17,12 +17,13 @@ The project shows the step to step to set up Azure and connect Azure to SSMS(SQL
 ### create resource group
    A resource group is a container that holds related resources for an Azure solution. A resource group is a logical grouping of models that manages access to and provides security for the models within it. When you create a resource group, it is assigned to the root resource group. You assign roles that grant specific privileges to a user within a resource group, and not to a model directly.
    create a resource group (if it does not exist)
-  ##
+ <img src= "images/resource_group_1.jpg">
   
   fill up basic information
-  ##
-  if it has been created successfully, it shows in the notification
+ <img src= "images/resource_group_2.jpg">
   
+  if it has been created successfully, it shows in the notification
+ <img src= "images/resource_group_3.jpg">
     
 ### create sql database
   when we are trying to create SQL database, we need to create SQL database server if it is not exist
