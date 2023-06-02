@@ -1,12 +1,12 @@
 # Azure_set_up
 
-The project shows the step to step to set up Azure and connect Azure to SSMS(SQL Server Management Studio) and shows the basic activity like copying data from SSMS to Snowflake using Azure data factory.
+The project shows the step to step to set up Azure and connect Azure to SSMS(SQL Server Management Studio) and shows the basic activity like copying data from SSMS to Snowflake using Azure data factory studio.
 
 ## overview
 - create resource group
 - create sql database
 - create storage account
-- connnect to ssms
+- connnect to SSMS
 - create a data factory
 - add link service
 - create pipeline and copy data from ssms to snowflake
@@ -35,11 +35,12 @@ The project shows the step to step to set up Azure and connect Azure to SSMS(SQL
  <img src= "images/user_created.jpg">
   Then we can choose the user as Azure AD admin and create a database server.
  <img src= "images/database_server2.jpg">
+  After that, we can create database and named it under the database server we created.
   
 ### create storage account
   <img src= "images/storage_account.jpg">
   
-### connnect to ssms
+### connnect to SSMS
 We should download ssms first, and open the application.
 Copy the server name from the database server we created before.
 Copy server name from database server we created before.
@@ -47,7 +48,7 @@ If you fail to connect SQL server, go to the SQL server you created and click 'n
   <img src= "images/ssms_connect.jpg">
 Then you can connect the database to ssms
   <img src= "images/ssms_1.jpg">
-Click 'new Query' on the top bar and type the code to create a simple table
+Choose the database you created and click 'new Query' on the top bar and type the code to create a table on SSMS
   <img src= "images/ssms_create_table.jpg">
   
  ### create a data factory
@@ -99,3 +100,6 @@ enable staging and compression so that it can be published and saved
 add a trigger to schedule a certain time to run the procedure
   <img src= "images/add_trigger.jpg"> 
  
+# lesson learned
+There will meet some problems when we try to set up Azure. For example, when we try to connect SSMS using Azure Active Directory - universal with MFA, it may not work sometimes. So, when we set up the SQL database server, it is necessary to add both SQL and Azure AD authentication. Apart from that, when I try to link the SQL database to the Azure data factory, it may be denied by the firewall. Therefore, adding your client IP to the SQL database server before linking could solve the problem. 
+Lastly, we should link the blob storage account and enable staging to publish successfully, because we use SQL database as source data to direct copy data to Snowflake. Otherwise, it cannot be published. 
