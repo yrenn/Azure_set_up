@@ -12,7 +12,7 @@ The project shows the step to step to set up Azure and connect Azure to SSMS(SQL
 - create pipeline and copy data from ssms to snowflake
 
 ## flow chart
-<img src= "images/flow_chart.png">
+<img src= "images/flow_chart_1.png">
 
 ### create resource group
    A resource group is a container that holds related resources for an Azure solution. A resource group is a logical grouping of models that manages access to and provides security for the models within it. When you create a resource group, it is assigned to the root resource group. You assign roles that grant specific privileges to a user within a resource group, and not to a model directly.
