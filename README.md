@@ -1,4 +1,4 @@
-# Azure_set_up & dynamic Loading Multiple CSV Files to Azure SQL Table and snowflake
+# DE_Data_Migration_Azure
 
 The project shows the step to step to set up Azure and connect Azure to SSMS(SQL Server Management Studio) and shows the basic activity like copying data from SSMS to Snowflake using Azure data factory studio and dynamic Loading Multiple CSV Files to Azure SQL Table and snowflake. 
 
